@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExatoLP</title>
+</head>
+<style>
+  html,
+  body {
+    /* IE 10-11 didn't like using min-height */
+    height: 100%;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+    /* Prevent Chrome, Opera, and Safari from letting these items shrink to smaller than their content's default minimum size. */
+    padding: 20px;
+  }
+
+  main p {
+    margin-bottom: 10px;
+  }
+
+  * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    margin: 0;
+    font: 16px Sans-Serif;
+  }
+
+  p {
+    margin: 0 0 0 0;
+  }
+
+  header {
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #fcfcfc;
+    box-shadow: 1px 2px 0 #ccc
+  }
+
+  footer {
+    display: flex;
+    background: #eee;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    box-shadow: 0 -1px 5px #ccc;
+    max-height: 80px;
+  }
+
+  .author {
+    font-size: 14px;
+    color: #444;
+    flex-basis: 40%;
+    padding-left: 30px;
+  }
+
+  .author strong {
+    color: #444;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: black underline;
+  }
+
+  .footer-left-logo {
+    flex-basis: 10%;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .footer-links {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 30px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+    color: #444;
+    margin-right: 30px;
+  }
+
+  .footer-right-logo {
+    margin: 0;
+    flex-basis: 10%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  #application-name {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+    text-align: center;
+    display: flex;
+    flex-basis: 10%;
+    justify-content: center;
+  }
+
+  .application-name-main {
+    font-family: system-ui;
+  }
+
+  .application-name-suffix {
+    font-size: 20px;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 3px;
+    color: #d30e0e;
+    font-family: monospace;
+  }
+</style>
+
+<body>
+  <header>
+    <h1 id="application-name"><p class="application-name-main">Exato</p><p class="application-name-suffix">LP</p></h1>
+  </header>
+
+  <main>
+    <p></p>
+  </main>
+
+  <footer>
+    <img class="footer-left-logo" src="/resources/ufrgs"
+         alt="Logo of Universidade Federal do Rio Grande do Sul (UFRGS)">
+    <p class="author">2023 <a href="https://github.com/RenanKummer"><strong>Renan
+          Kummer</strong></a></p>
+    <nav class="footer-links">
+      <a href="https://github.com/RenanKummer/exatolp-web-ui">GitHub</a>
+      <a href="#">About</a>
+    </nav>
+    <img class="footer-right-logo" src="/resources/inf" alt="Logo of UFRGS's Instituto de Informática (INF)">
+  </footer>
+</body>
+
+</html>
